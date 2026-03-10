@@ -90,10 +90,10 @@ for(let i=0 ; i < products.length ; i++){
     <div class="row">
         <div class="image"><img src="${products[i].image}" ></div>
         <div class="data_of_product">
-            <p class="title">${products[i].title}</p>
+            <p class="title"> ${products[i].title}</p>
             <p class="description">${products[i].description}</p>
-            <p class="old_price">${products[i].old_price}</p>
-            <p class="price_after_sale">${products[i].price_after_sale}</p>
+            <p class="old_price"> old price:${products[i].old_price}</p>
+            <p class="price_after_sale">price after sale${products[i].price_after_sale}</p>
             <p class="currency">${products[i].currency}</p>
         </div>
     </div>
