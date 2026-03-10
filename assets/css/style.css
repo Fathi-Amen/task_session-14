@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    padding: 30px;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section{
+    padding: 30px;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows: repeat(3 ,500px);
+    row-gap: 15px;
+    column-gap: 30px;
+}
+.row{
+    padding: 30px;
+    max-width: 400px;
+    padding: 20px;    
+    border: 2px solid  #413f3f;
+    border-radius: 10px;
+}
+h1{
+    text-align: center;
+}
+
+.image img{
+    max-width: 350px;
+    max-height: 200px;
+    border-radius: 10px;
+    margin-left: 3.5px;
+    /* background-image: url("../media/iamge\ \(1\).jpg"); */
+}
+.container .data_of_product{
+    padding: 20px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.data_of_product .description{
+ line-height: 1.6;
+ text-align:left;
+ display: block;
+}
+@media(max-width : 625px){
+    main{
+        padding: 20px;
+    }
+    section{
+        /* max-width: 625px; */
+    padding: 8px;
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows: repeat(4 ,336px);
+    row-gap: 10px;
+    column-gap: 10px;
+}
+.row{
+    padding: 5px;
+    max-width: 190px;
+    border: 2px solid  #413f3f;
+    border-radius: 10px;
+}
+.image img{
+    max-width: 165px;
+    max-height: 100px;
+    border-radius: 10px;
+    margin-left: 3.5px;
+    /* background-image: url("../media/iamge\ \(1\).jpg"); */
+}
+.container .data_of_product{
+    padding: 10px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+}
+@media(max-width : 390px){
+    section{
+        /* max-width: 625px; */
+    padding: 8px;
+    display: grid;
+    grid-template-columns:repeat(1,1fr);
+    grid-template-rows: repeat(4 ,336px);
+    row-gap: 10px;
+    column-gap: 10px;
+}
+.row{
+    padding: 5px;
+    max-width: 315px;
+    border: 2px solid  #413f3f;
+    border-radius: 10px;
+}
+.image img{
+    max-width: 300px;
+    max-height: 100px;
+    border-radius: 10px;
+    margin-left: 27.5px;
+    /* background-image: url("../media/iamge\ \(1\).jpg"); */
+}
+}
